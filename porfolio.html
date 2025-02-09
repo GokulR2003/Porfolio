@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul R - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2e86de;
+            --secondary: #222f3e;
+            --light: #f5f6fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('header-bg.jpg');
+            background-size: cover;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            border: 5px solid var(--primary);
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            color: var(--secondary);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        /* Education & Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .skill-item {
+            padding: 1rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="your-photo.jpg" alt="Gokul R" class="profile-img">
+        <h1>Gokul R</h1>
+        <p>Electrical Engineer & Data Scientist</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p class="about-text">
+            Dual-degree student passionate about leveraging technology to solve real-world problems. 
+            Combining electrical engineering expertise with data science capabilities to create 
+            innovative solutions. Strong background in Python development, data analysis, 
+            and graphic design.
+        </p>
+    </section>
+
+    <section class="section" id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>BS in Data Science</h3>
+                <p>IIT Madras | 2023-2027</p>
+            </div>
+            <div class="timeline-item">
+                <h3>BTech in Electrical Engineering</h3>
+                <p>SASTRA University | 2023-2027</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Customer Segmentation</h3>
+                <p>K-Means clustering with Tkinter GUI</p>
+                <a href="#" class="github-link">View on GitHub</a>
+            </div>
+            <!-- Repeat for other projects -->
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Data Analysis</div>
+            <!-- Add all skills -->
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <p>📧 gokulr200305@gmail.com</p>
+            <p>📱 +91 9092943337</p>
+        </div>
+    </section>
+</body>
+</html>
